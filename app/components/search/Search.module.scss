@@ -1,0 +1,41 @@
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .input {
+    border: 2px solid #2c2024;
+    background: rgb(43, 58, 73);
+    background: linear-gradient(
+      90deg,
+      rgba(43, 58, 73, 1) 0%,
+      rgba(64, 49, 64, 1) 98%
+    );
+    outline: none;
+    padding: 10px;
+    padding-left: 40px;
+    color: #aeb6bb;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: inherit;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.4s ease;
+
+    &:focus {
+      max-width: 350px;
+    }
+
+    &::placeholder {
+      color: #aeb6bb;
+    }
+  }
+}

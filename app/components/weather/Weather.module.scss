@@ -1,0 +1,10 @@
+.weather {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #cfe0de;
+  min-width: 175px;
+  .icon {
+    flex-shrink: 0;
+  }
+}

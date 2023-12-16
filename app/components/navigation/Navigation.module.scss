@@ -1,0 +1,43 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: row;
+      height: auto;
+      align-items: flex-end;
+    }
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    &_active {
+      filter: drop-shadow(0 0 20px #fff);
+    }
+  }
+
+  &:last-of-type {
+    li:last-of-type {
+      margin-top: auto;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+  }
+}
